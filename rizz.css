@@ -1,0 +1,10 @@
+body {
+    background-image: url("https://img.freepik.com/free-vector/detailed-hand-painted-pink-watercolour-background_1048-17039.jpg?size=626&ext=jpg")
+}
+table,th,td{
+    border: 5px solid rgb(204, 44, 225);
+    border-collapse: collapse;
+}
+h3:hover{
+background-color: white;
+}
