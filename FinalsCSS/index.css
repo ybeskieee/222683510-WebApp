@@ -1,0 +1,14 @@
+h2 {
+    background-color: beige;
+}
+
+h3 {
+    font-style: italic;
+    color: aquamarine;
+    border-bottom: 1cm;
+}
+
+ul {
+    color: blueviolet;
+    font-family: 'Time New Roman', Times, serif;
+}
