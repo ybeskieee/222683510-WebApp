@@ -1,0 +1,422 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="techdoc.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>CC14: Web Application Development</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li>
+          <a class="nav-link" href="#What_I_learn_in_this_course"
+            >What I learn in this course</a
+          >
+        </li>
+        <li>
+          <a class="nav-link" href="#Intro"
+            >HTML5</a
+          >
+        </li>
+        <li><a class="nav-link" href="#CSS">CSS</a></li>
+        <li><a class="nav-link" href="#JS">JS</a></li>
+        <li>
+          <a class="nav-link" href="#git"
+            >Git Commands</a
+          >
+        </li>
+        <li><a class="nav-link" href="#WSL">WSL</a></li>
+        <li>
+          <a class="nav-link" href="#apache">Apache Setup</a>
+        </li>
+        <li><a class="nav-link" href="#ADD">Addtional Apache Commands</a></li>
+        <li><a class="nav-link" href="#format">Formats</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            Web Application Development involves structuring the content in a logical and progressive manner, covering key concepts and skills necessary for developing web applications. Below is a sample course outline that you can customize based on the specific technologies, tools, and programming languages you intend to cover. This outline assumes a basic understanding of HTML, CSS, and JavaScript.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="What_I_learn_in_this_course">
+        <header>What I learn in this course</header>
+        <article>
+          <p>I learned new knowledge including:</p>
+
+          <ul>
+            <li>
+              Introduction to HTML5, CSS and JavaScript
+            </li>
+            <li>
+              Overview of Web Technologies
+            </li>
+            <li>Git</li>
+            
+            <li>
+              WSL
+            </li>
+            <li>
+              Apache
+            </li>
+            <li>
+              HTML Formats
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Intro">
+        <header>HTML5 (Hypertext Markup Language):</header>
+        <article>
+          <ul>
+            <li>HTML is the standard markup language used to create the structure and content of web pages.</li>
+            <li>HTML5 is the latest version of HTML, and it introduces new features and improvements over its predecessors.</li>
+            <li>It provides tags and attributes that define the various elements on a web page, such as headings, paragraphs, images, links, forms, and more.</li>
+            <li>HTML5 also includes new elements like <em>header, nav, article, section, footer,</em>which help in structuring the content more semantically.</li>
+          </ul>
+          <p>Example of a simple HTML5 document structure:</p>
+          <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+              &lt;meta charset="UTF-8"&gt;
+              &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+              &lt;title>My First Web Page&lt;/title&gt;
+              &lt;/head&gt;
+              &lt;body&gt;
+              &lt;header&gt;
+              &lt;h1>Welcome to My Website&lt;/h1&gt;
+              &lt;/header&gt;
+              &lt;nav&gt;
+              &lt;ul&gt;
+                      &lt;li&gt;&lt;a href="#home">Home&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="#about">About&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href="#contact">Contact&lt;/a&gt;&lt;/li&gt;
+              &lt;/ul&gt;
+                        &lt;/nav&gt;
+                        &lt;section&gt;
+                        &lt;h2&gt;About Us&lt;/h2&gt;
+                        &lt;p&gt;This is a brief description of our website...&lt;/p&gt;
+                        &lt;/section&gt;
+                        &lt;footer&gt;
+                        &lt;p&gt;&copy; 2024 My Website. All rights reserved.&lt;/p&gt;
+                        &lt;/footer&gt;
+                        &lt;/body&gt;
+                        &lt;/html&gt;
+
+            </code>
+        </article>
+      </section>
+      <section class="main-section" id="CSS">
+        <header>CSS (Cascading Style Sheets):</header>
+        <article>
+          <ul>
+            <li>CSS is used to style and layout the visual presentation of HTML documents.</li>
+            <li>It allows you to control the colors, fonts, spacing, and positioning of elements on a web page.</li>
+            <li>CSS is applied either internally within an HTML document, externally in a separate stylesheet file, or inline within HTML tags.</li>
+          </ul>
+          <p>Example of a simple CSS style rule:</p>
+          <code>body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+        
+        h1 {
+            color: #333;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+        </code>
+        </article>
+      </section>
+      <section class="main-section" id="JS">
+        <header>JavaScript:</header>
+        <article>
+          <ul>
+            <li>JavaScript is a scripting language that enables dynamic and interactive behavior on web pages.</li>
+            <li>It can manipulate the content and structure of HTML, handle user input, and communicate with servers (Ajax).</li>
+            <li>JavaScript is commonly used to create features like sliders, form validation, pop-up messages, and more.</li>
+            <li>It can be included directly within HTML documents or linked externally.</li>
+          </ul>
+          <p>Example of a simple JavaScript script:</p>
+          <code>// Simple alert when the page loads
+            window.onload = function() {
+                alert("Welcome to our website!");
+            }
+            
+            // Example of handling a button click
+            function displayMessage() {
+                var message = "Button clicked!";
+                console.log(message);
+                alert(message);
+            }
+            </code>
+        </article>
+      </section>
+      <section class="main-section" id="git">
+        <header>GIT COMMANDS</header>
+        <article>
+         <ul>
+          <li>Add & Commit</li>
+          <p>To add the file on the list of what will goes in the repository and commit to add comment.</p>
+          <code>$ git add .
+            $ git commit -m "new project"</code>
+          <li> Amend</li>
+          <p>You can rename your current commit message using the `--amend` flag and write the new message. This will help you with accidental messages.</p>
+          <code>$ git commit --amend -m "Love"
+
+            [master 7b7f891] Love
+            Date: Mon Jan 22 17:57:58 2024 +0500
+            4 files changed, 2 insertions(+), 1 deletion(-)</code>
+          <li>Push</li>
+          <p>To add the file on the your local repository on the Github.</p>
+          <code>
+            git push
+          </code>
+         </ul>
+        </article>
+      </section>
+      <section class="main-section" id="WSL">
+        <header>WSL setup</header>
+        <article>
+          <p>
+            Windows Subsystem for Linux (WSL) is a feature of Windows that allows you to run a Linux environment on your Windows machine, without the need for a separate virtual machine or dual booting. WSL is designed to provide a seamless and productive experience for developers who want to use both Windows and Linux at the same time.
+          </p>
+
+          <p>List of Command</p>
+          <code>wsl --install</code>
+          <p>
+            installs Linux on you computer
+          </p>
+          <code>wsl</code>
+          <p>opens Linux in your terminal</p>
+          <code>clear</code>
+          <p>clears the terminal screen</p>
+        </article>
+      </section>
+      <section class="main-section" id="apache">
+        <header>Apache Setup</header>
+        <article>
+          <p>
+            List of Apache Command
+          </p>
+        <code>
+          sudo apt update
+        </code>
+        <p>updates Linux before installation of Apache</p>
+        <code>
+          sudo apt upgrade
+        </code>
+        <p>upgrades Linux </p>
+        <code>
+          sudo apt-get install apache2 
+        </code>
+        <p>installs Apache server</p>
+        <code>
+          sudo service apache2 start
+        </code>
+        <p>starts Apache Server</p>
+        <code>
+          sudo service apache2 stop
+        </code>
+        <p>stops Apache Server</p>
+        </article>
+      </section>
+      <section class="main-section" id="ADD">
+        <header>Additional Apache  Commands:</header>
+        <article>
+          <code>
+            sudo nano
+          </code>
+          <p>open text editor</p>
+          <code>
+            sudo chown -R username path/to/working/directory
+          </code>
+          <p>make folder writable</p>
+          <code>
+            sudo nano /etc/apache2/sites-available/000-default.conf
+          </code>
+          <p>enable site
+            look for document root and change it your desired folder to run in localhost</p>
+            <code>
+              sudo systemctl status apache2
+            </code>
+            <p>check if apache is running</p>
+            <code>
+              sudo systemctl restart apache2
+            </code>
+            <p>	
+              restart Apache. You need to this every time you change document root. The refresh your browser to update the output.</p>
+        </article>
+      </section>
+      <section class="main-section" id="format">
+        <header>Format used</header>
+        <article>
+          
+<strong>ADRRESS</strong>
+<address><b>
+    Written by <a href="marklol825@gmail.com">Mark Magno</a>.<br>
+    Check me at:<br>
+    hello.com<br>
+    Baguio City<br>
+</b></address>
+
+
+<strong>BDI</strong>
+<li>Mr.<bdi>うんこ</bdi> is the 1st place in the contest.</li>
+
+
+<strong>BDO</strong>
+<p><bdo dir="rtl">If you can read this. I love you</bdo></p>
+
+
+<strong>BIG</strong>
+<p style="font-size: larger;">I'am big text.</p>
+
+
+<strong>BLOCKQUOTE and CITE</strong>
+<blockquote cite="https://www.newyorker.com/latest/humor">Steel-toed Crocs with matching compression socks—protect toes from getting stomped on and combat varicose veins.</blockquote>
+
+
+<strong>CODE</strong>
+<p>The html <code>BDO</code> Makes the text turn right to left</p>
+
+
+<strong>DEL and INS</strong>
+<p><i>Nah, I'd <del>Win</del> <ins>Lose</ins></i></p>
+
+
+<strong>EM</strong>
+<em>This is emphasized text.</em>
+
+
+<strong>DFN</strong>
+<p><dfn>Sorry</dfn> A simple word that seeks forgiveness and shows respect.</p>
+
+
+<strong>KBD</strong>
+<p>Press <kbd>crtl+alt+del</kbd> when gaming, something fun will happen.</p>
+
+
+<strong>MARK</strong>
+<p>You are <mark>Specialz</mark>!</p>
+
+
+<strong>METER</strong>
+<label for="meter">This is how happy I'am today</label>
+<meter id="meter" value="5" min="0" max="10">out of ten</meter>
+
+
+<strong>PRE</strong>
+<pre>
+Everything here is pre-formatted. That is why it look like this.
+</pre>
+
+
+<strong>PROGRESS</strong>
+<label for="prog">KEK meter:</label>
+<progress id="prog"value="69" max="100">69%</progress>
+
+
+<strong>Q</strong>
+<p>Gojo said <q>Nah, i'd Win</q> but in fact, he did not.</p>
+
+
+<strong>RUBY, RP, and  RT</strong>
+<ruby>
+神様 <rp>(</rp><rt>辭典檢視 「蚶 : ㄏㄢ」</rt><rp>)</rp>
+</ruby>
+
+
+<strong>S</strong>
+<p><s>Everything is in 50% discount</s></p>
+<p>Special offer is not available anymore</p>
+
+
+<strong>SAMP</strong>
+<p><samp>Computer needs to update</samp> go to setting and update</p>
+
+
+<strong>SMALL and STRONG</strong>
+<small><strong>I'am small text.</strong></small>
+
+
+<strong>SUB and SUP</strong>
+<p>This letter will go <sub>DOWN</sub></p>
+<p>This letter will go <sup>UP</sup></p>
+
+
+<strong>TEMP</strong>
+<button onclick="showContent()">click only once</button>
+
+<template>
+<img src="https://i.imgflip.com/5avlpv.jpg" alt="RIck Roll">
+</template>
+
+<script>
+function showContent() {
+ let  temp = document.getElementsByTagName("template")[0];
+ let clon = temp.content.cloneNode(true);
+
+ document.body.appendChild(clon);
+}
+</script>
+
+
+<strong>TIME</strong>
+<p>Our CC14 class starts at <time>4:50</time> and end at <time>7:30</time></p>
+
+
+<strong>TT</strong>
+<p style="font-family: 'lucida console', monospace">Alternate TT text using STYLE</p>
+
+
+<strong>U</strong>
+<p>U element can <u>Underline</u> text.</p>
+
+
+<strong>VAR</strong>
+<p>Isn't <var>1+1=2</var> does not mean I love U.</p>
+
+
+<strong>WBR</strong>
+<p>even if this a very long long long long long long long long long text this next word will break in nextline:<wbr>this nut is special for you<wbr>try zooming if this work.</p>
+
+        </article>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+              All the documentation in this page is taken from
+              <a
+                href="https://primusr.notion.site/Web-Application-Development-c213cf6dbd834f6f8bcc2d02746209db?p=d260f8306e014933a6b76d65bef10be5&pm=s"
+                target="_blank"
+                >MDN</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
